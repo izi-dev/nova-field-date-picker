@@ -6,8 +6,8 @@
 An elegant calendar and datepicker Field for laravel nova based on https://vcalendar.io/.
 
 ## Screenshots
-![Screenshot](/docs/img/1Datepicker.PNG)
-![Screenshot](/docs/img/2Datepicker.PNG)
+![Screenshot1](/docs/img/1Datepicker.PNG?raw=true "Preview")
+![Screenshot2](/docs/img/2Datepicker.PNG?raw=true "Preview")
 
 ## Installation
 This package can be installed through Composer.
@@ -24,27 +24,29 @@ SuperDatePicker::make(__("Birthdate"), 'birthdate')
     ->required(true)
     ->rules('required', 'date'),
 ```
-![Screenshot](/docs/img/3Datepicker.PNG)
+![Screenshot3](/docs/img/3Datepicker.PNG?raw=true "Preview")
 
 ## Dark Mode
 
 ```
 ->isDark()
 ```
-![Screenshot](/docs/img/4Datepicker.PNG)
+![Screenshot4](/docs/img/4Datepicker.PNG?raw=true "Preview")
 
 ## Color
 
 ```
 ->color("red") //gray, red, orange, yellow, green, teal, blue, indigo, purple, pink.
 ```
-![Screenshot](/docs/img/5Datepicker.PNG)
+
+![Screenshot5](/docs/img/5Datepicker.PNG?raw=true "Preview")
 
 ## Inline
 ```
 ->isInline() 
 ```
-![Screenshot](/docs/img/6Datepicker.PNG)
+
+![Screenshot6](/docs/img/6Datepicker.PNG?raw=true "Preview")
 
 ## Disabled Dates
 
@@ -53,21 +55,24 @@ SuperDatePicker::make(__("Birthdate"), 'birthdate')
 ->disabledDates("2020-03-25","2020-03-24")
 ->disabledDates(["2020-03-25","2020-03-26"])
 ```
-![Screenshot](/docs/img/7Datepicker.PNG)
+
+![Screenshot7](/docs/img/7Datepicker.PNG?raw=true "Preview")
 
 ## Format
 
 ```
 ->format("YYYY/MM/DD")
 ```
-![Screenshot](/docs/img/8Datepicker.PNG)
+
+![Screenshot8](/docs/img/8Datepicker.PNG?raw=true "Preview")
 
 ## Locale
 
 ```
 ->locale("en")
 ```
-![Screenshot](/docs/img/9Datepicker.PNG)
+
+![Screenshot9](/docs/img/9Datepicker.PNG?raw=true "Preview")
 
 ## Min && Max Date
 
@@ -75,7 +80,7 @@ SuperDatePicker::make(__("Birthdate"), 'birthdate')
 ->minDate("2020-03-01")
 ->maxDate("2020-03-31")
 ```
-![Screenshot](/docs/img/10Datepicker.PNG)
+![Screenshot10](/docs/img/10Datepicker.PNG?raw=true "Preview")
 
 # Advanced Custom DatePicker
 ## Custom Select Date
@@ -92,7 +97,7 @@ use IziDev\VCalendar\Attributes\DotAttributeVCalendar;
     (new DotAttributeVCalendar("orange"))
 )
 ```
-![Screenshot](/docs/img/11Datepicker.PNG)
+![Screenshot11](/docs/img/11Datepicker.PNG?raw=true "Preview")
 
 ### Highlight
 Arguments: null, true, gray, red, orange, yellow, green, teal, blue, indigo, purple, pink
@@ -103,7 +108,7 @@ use IziDev\VCalendar\Attributes\HighlightAttributeVCalendar;
     (new HighlightAttributeVCalendar("orange"))
 )
 ```
-![Screenshot](/docs/img/12Datepicker.PNG)
+![Screenshot12](/docs/img/12Datepicker.PNG?raw=true "Preview")
 
 ### Bar
 Arguments: null, true, gray, red, orange, yellow, green, teal, blue, indigo, purple, pink
@@ -114,7 +119,7 @@ use IziDev\VCalendar\Attributes\BarAttributeVCalendar;
     (new BarAttributeVCalendar("orange"))
 )
 ```
-![Screenshot](/docs/img/13Datepicker.PNG)
+![Screenshot13](/docs/img/13Datepicker.PNG?raw=true "Preview")
 
 ## Popover
 Arguments:
@@ -130,7 +135,7 @@ use IziDev\VCalendar\Popover\HoverPopoverVCalendar;
         ->popover(new HoverPopoverVCalendar("Fecha de nacimiento"))
 )
 ```
-![Screenshot](/docs/img/14Datepicker.PNG)
+![Screenshot14](/docs/img/14Datepicker.PNG?raw=true "Preview")
 
 ## Add More Select Date
 Arguments:
@@ -150,13 +155,13 @@ BarAttributeVCalendar
         ->popover(new HoverPopoverVCalendar("Update Record Contact."))
 )
 ```
-![Screenshot](/docs/img/15Datepicker.PNG)
+![Screenshot15](/docs/img/15Datepicker.PNG?raw=true "Preview")
 
 # Advanced Custom Disabled
-##Type
+## Type
 
 |  Object |  Description | Range | 
-| ------------ | ------------ |
+| ------------ | ------------ | ------------ | 
 |  IziDev\VCalendar\Disabled\DaysDisabledDatesVCalendar | Day number from the start or end of the month.	  |1 to 31, -1 to -31 |
 |  IziDev\VCalendar\Disabled\WeekdaysDisabledDatesVCalendar | Day of the week.	  |1: Sun to 7: Sat |
 |  IziDev\VCalendar\Disabled\WeeksDisabledDatesVCalendar | Week number from the start or end of the month.	  |1 to 6, -1 to -6 |
@@ -179,4 +184,4 @@ BarAttributeVCalendar
 ```
 ->disabled(new WeekdaysDisabledDatesVCalendar(1, 7),new WeeklyIntervalDatesVCalendar(2))
 ```
-![Screenshot](/docs/img/16Datepicker.PNG)
+![Screenshot16](/docs/img/16Datepicker.PNG?raw=true "Preview")
