@@ -6,8 +6,8 @@
 An elegant calendar and datepicker Field for laravel nova based on https://vcalendar.io/.
 
 ## Screenshots
-![Screenshot1](1Datepicker.PNG "Preview")
-![Screenshot2](2Datepicker.PNG "Preview")
+![Screenshot1](https://novapackages.com//storage/screenshots/3Ww3jLHOalv9LLQt6DAe8uJMJW1Rc4pM8aJVe8wC.png "Preview")
+![Screenshot2](https://novapackages.com//storage/screenshots/GqMFuZXQuiTPYXHJ5EasFhMZFGFNsgpfhLqfxXnb.png "Preview")
 
 ## Installation
 This package can be installed through Composer.
@@ -24,14 +24,14 @@ SuperDatePicker::make(__("Birthdate"), 'birthdate')
     ->required(true)
     ->rules('required', 'date'),
 ```
-![Screenshot3](/docs/img/3Datepicker.PNG "Preview")
+![Screenshot3](https://novapackages.com//storage/screenshots/no611KThB5A7qHjvtxasvk2UtLX76qXKBnc0Fz7G.png "Preview")
 
 ## Dark Mode
 
 ```
 ->isDark()
 ```
-![Screenshot4](/docs/img/4Datepicker.PNG "Preview")
+![Screenshot4](https://novapackages.com//storage/screenshots/Df0oL1OKzpGLyF4g45JIzJEuw837bdmwQvqDH4qo.png "Preview")
 
 ## Color
 
@@ -39,14 +39,15 @@ SuperDatePicker::make(__("Birthdate"), 'birthdate')
 ->color("red") //gray, red, orange, yellow, green, teal, blue, indigo, purple, pink.
 ```
 
-![Screenshot5](/docs/img/5Datepicker.PNG "Preview")
+![Screenshot6](https://novapackages.com//storage/screenshots/6Ql2KpNVSMj6LUVUEbEUWWdAP7HXGDirAKUPS2Og.png "Preview")
 
 ## Inline
 ```
 ->isInline() 
 ```
 
-![Screenshot6](/docs/img/6Datepicker.PNG "Preview")
+![Screenshot5](https://novapackages.com//storage/screenshots/G7lQOVPfOPJMo50B5cuhUU8Mttsh7BNUX5gpBCQ9.png "Preview")
+
 
 ## Disabled Dates
 
@@ -56,7 +57,7 @@ SuperDatePicker::make(__("Birthdate"), 'birthdate')
 ->disabledDates(["2020-03-25","2020-03-26"])
 ```
 
-![Screenshot7](/docs/img/7Datepicker.PNG "Preview")
+![Screenshot7](https://novapackages.com//storage/screenshots/LWvQQEK2Ce2elr7lQWxQVnQMTubZEDpaN5B8F4Rs.png "Preview")
 
 ## Format
 
@@ -64,7 +65,7 @@ SuperDatePicker::make(__("Birthdate"), 'birthdate')
 ->format("YYYY/MM/DD")
 ```
 
-![Screenshot8](/docs/img/8Datepicker.PNG "Preview")
+![Screenshot8](https://novapackages.com//storage/screenshots/2cT45HLJmyAsPgWDYjmU7KyV1AB9UkDkcZIjcmIu.png "Preview")
 
 ## Locale
 
@@ -72,7 +73,7 @@ SuperDatePicker::make(__("Birthdate"), 'birthdate')
 ->locale("en")
 ```
 
-![Screenshot9](/docs/img/9Datepicker.PNG "Preview")
+![Screenshot9](https://novapackages.com//storage/screenshots/I3Hy4eEiOxr41VHb1j1VE1s5JdJcTKiGSgnbICOk.png "Preview")
 
 ## Min && Max Date
 
@@ -80,7 +81,6 @@ SuperDatePicker::make(__("Birthdate"), 'birthdate')
 ->minDate("2020-03-01")
 ->maxDate("2020-03-31")
 ```
-![Screenshot10](/docs/img/10Datepicker.PNG "Preview")
 
 # Advanced Custom DatePicker
 ## Custom Select Date
@@ -97,7 +97,7 @@ use IziDev\VCalendar\Attributes\DotAttributeVCalendar;
     (new DotAttributeVCalendar("orange"))
 )
 ```
-![Screenshot11](/docs/img/11Datepicker.PNG "Preview")
+![Screenshot11](https://novapackages.com//storage/screenshots/WBh4HhNiAxYh8EwMCVf0ZlYOp1UzRBQDg87sB0F8.png "Preview")
 
 ### Highlight
 Arguments: null, true, gray, red, orange, yellow, green, teal, blue, indigo, purple, pink
@@ -108,7 +108,7 @@ use IziDev\VCalendar\Attributes\HighlightAttributeVCalendar;
     (new HighlightAttributeVCalendar("orange"))
 )
 ```
-![Screenshot12](/docs/img/12Datepicker.PNG "Preview")
+![Screenshot12](https://novapackages.com//storage/screenshots/NGNYxBPQQ8DPcjn6a0Rop5rzJ2m84P1gZFxQRnTk.png "Preview")
 
 ### Bar
 Arguments: null, true, gray, red, orange, yellow, green, teal, blue, indigo, purple, pink
@@ -119,7 +119,7 @@ use IziDev\VCalendar\Attributes\BarAttributeVCalendar;
     (new BarAttributeVCalendar("orange"))
 )
 ```
-![Screenshot13](/docs/img/13Datepicker.PNG "Preview")
+![Screenshot13](https://novapackages.com//storage/screenshots/NgvTHduxKYsRTSptmfHebwl5Wl8w2vJdzg4kZ0bH.png "Preview")
 
 ## Popover
 Arguments:
@@ -135,7 +135,7 @@ use IziDev\VCalendar\Popover\HoverPopoverVCalendar;
         ->popover(new HoverPopoverVCalendar("Fecha de nacimiento"))
 )
 ```
-![Screenshot14](/docs/img/14Datepicker.PNG "Preview")
+![Screenshot14](https://novapackages.com//storage/screenshots/zgiWFHMb6T1RYhplIMcgqR6gRgac1x3TisIrS8ij.png "Preview")
 
 ## Add More Select Date
 Arguments:
@@ -155,7 +155,7 @@ BarAttributeVCalendar
         ->popover(new HoverPopoverVCalendar("Update Record Contact."))
 )
 ```
-![Screenshot15](/docs/img/15Datepicker.PNG "Preview")
+![Screenshot15](https://novapackages.com//storage/screenshots/bUdiqh7xzqQ0aUmN2ms5kr6E5A19eZGIyn1472mh.png "Preview")
 
 # Advanced Custom Disabled
 ## Type
@@ -184,4 +184,4 @@ BarAttributeVCalendar
 ```
 ->disabled(new WeekdaysDisabledDatesVCalendar(1, 7),new WeeklyIntervalDatesVCalendar(2))
 ```
-![Screenshot16](/docs/img/16Datepicker.PNG "Preview")
+![Screenshot16](https://novapackages.com//storage/screenshots/2JiaXsxqEu00KgWEFpeql55Kz29n8A3omY02Bohe.png "Preview")
