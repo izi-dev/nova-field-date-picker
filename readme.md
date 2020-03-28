@@ -6,8 +6,8 @@
 An elegant calendar and datepicker Field for laravel nova based on https://vcalendar.io/.
 
 ## Screenshots
-![Screenshot1](/docs/img/1Datepicker.PNG?raw=true "Preview")
-![Screenshot2](/docs/img/2Datepicker.PNG?raw=true "Preview")
+![Screenshot1](1Datepicker.PNG "Preview")
+![Screenshot2](2Datepicker.PNG "Preview")
 
 ## Installation
 This package can be installed through Composer.
@@ -24,14 +24,14 @@ SuperDatePicker::make(__("Birthdate"), 'birthdate')
     ->required(true)
     ->rules('required', 'date'),
 ```
-![Screenshot3](/docs/img/3Datepicker.PNG?raw=true "Preview")
+![Screenshot3](/docs/img/3Datepicker.PNG "Preview")
 
 ## Dark Mode
 
 ```
 ->isDark()
 ```
-![Screenshot4](/docs/img/4Datepicker.PNG?raw=true "Preview")
+![Screenshot4](/docs/img/4Datepicker.PNG "Preview")
 
 ## Color
 
@@ -39,14 +39,14 @@ SuperDatePicker::make(__("Birthdate"), 'birthdate')
 ->color("red") //gray, red, orange, yellow, green, teal, blue, indigo, purple, pink.
 ```
 
-![Screenshot5](/docs/img/5Datepicker.PNG?raw=true "Preview")
+![Screenshot5](/docs/img/5Datepicker.PNG "Preview")
 
 ## Inline
 ```
 ->isInline() 
 ```
 
-![Screenshot6](/docs/img/6Datepicker.PNG?raw=true "Preview")
+![Screenshot6](/docs/img/6Datepicker.PNG "Preview")
 
 ## Disabled Dates
 
@@ -56,7 +56,7 @@ SuperDatePicker::make(__("Birthdate"), 'birthdate')
 ->disabledDates(["2020-03-25","2020-03-26"])
 ```
 
-![Screenshot7](/docs/img/7Datepicker.PNG?raw=true "Preview")
+![Screenshot7](/docs/img/7Datepicker.PNG "Preview")
 
 ## Format
 
@@ -64,7 +64,7 @@ SuperDatePicker::make(__("Birthdate"), 'birthdate')
 ->format("YYYY/MM/DD")
 ```
 
-![Screenshot8](/docs/img/8Datepicker.PNG?raw=true "Preview")
+![Screenshot8](/docs/img/8Datepicker.PNG "Preview")
 
 ## Locale
 
@@ -72,7 +72,7 @@ SuperDatePicker::make(__("Birthdate"), 'birthdate')
 ->locale("en")
 ```
 
-![Screenshot9](/docs/img/9Datepicker.PNG?raw=true "Preview")
+![Screenshot9](/docs/img/9Datepicker.PNG "Preview")
 
 ## Min && Max Date
 
@@ -80,7 +80,7 @@ SuperDatePicker::make(__("Birthdate"), 'birthdate')
 ->minDate("2020-03-01")
 ->maxDate("2020-03-31")
 ```
-![Screenshot10](/docs/img/10Datepicker.PNG?raw=true "Preview")
+![Screenshot10](/docs/img/10Datepicker.PNG "Preview")
 
 # Advanced Custom DatePicker
 ## Custom Select Date
@@ -97,7 +97,7 @@ use IziDev\VCalendar\Attributes\DotAttributeVCalendar;
     (new DotAttributeVCalendar("orange"))
 )
 ```
-![Screenshot11](/docs/img/11Datepicker.PNG?raw=true "Preview")
+![Screenshot11](/docs/img/11Datepicker.PNG "Preview")
 
 ### Highlight
 Arguments: null, true, gray, red, orange, yellow, green, teal, blue, indigo, purple, pink
@@ -108,7 +108,7 @@ use IziDev\VCalendar\Attributes\HighlightAttributeVCalendar;
     (new HighlightAttributeVCalendar("orange"))
 )
 ```
-![Screenshot12](/docs/img/12Datepicker.PNG?raw=true "Preview")
+![Screenshot12](/docs/img/12Datepicker.PNG "Preview")
 
 ### Bar
 Arguments: null, true, gray, red, orange, yellow, green, teal, blue, indigo, purple, pink
@@ -119,7 +119,7 @@ use IziDev\VCalendar\Attributes\BarAttributeVCalendar;
     (new BarAttributeVCalendar("orange"))
 )
 ```
-![Screenshot13](/docs/img/13Datepicker.PNG?raw=true "Preview")
+![Screenshot13](/docs/img/13Datepicker.PNG "Preview")
 
 ## Popover
 Arguments:
@@ -135,7 +135,7 @@ use IziDev\VCalendar\Popover\HoverPopoverVCalendar;
         ->popover(new HoverPopoverVCalendar("Fecha de nacimiento"))
 )
 ```
-![Screenshot14](/docs/img/14Datepicker.PNG?raw=true "Preview")
+![Screenshot14](/docs/img/14Datepicker.PNG "Preview")
 
 ## Add More Select Date
 Arguments:
@@ -155,7 +155,7 @@ BarAttributeVCalendar
         ->popover(new HoverPopoverVCalendar("Update Record Contact."))
 )
 ```
-![Screenshot15](/docs/img/15Datepicker.PNG?raw=true "Preview")
+![Screenshot15](/docs/img/15Datepicker.PNG "Preview")
 
 # Advanced Custom Disabled
 ## Type
@@ -184,4 +184,4 @@ BarAttributeVCalendar
 ```
 ->disabled(new WeekdaysDisabledDatesVCalendar(1, 7),new WeeklyIntervalDatesVCalendar(2))
 ```
-![Screenshot16](/docs/img/16Datepicker.PNG?raw=true "Preview")
+![Screenshot16](/docs/img/16Datepicker.PNG "Preview")
