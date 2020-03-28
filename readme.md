@@ -6,8 +6,8 @@
 An elegant calendar and datepicker Field for laravel nova based on https://vcalendar.io/.
 
 ## Screenshots
-![Screenshot](docs/img/1Datepicker.PNG)
-![Screenshot](docs/img/2Datepicker.PNG)
+![Screenshot](/docs/img/1Datepicker.PNG)
+![Screenshot](/docs/img/2Datepicker.PNG)
 
 ## Installation
 This package can be installed through Composer.
@@ -24,27 +24,27 @@ SuperDatePicker::make(__("Birthdate"), 'birthdate')
     ->required(true)
     ->rules('required', 'date'),
 ```
-![Screenshot](docs/img/3Datepicker.PNG)
+![Screenshot](/docs/img/3Datepicker.PNG)
 
 ## Dark Mode
 
 ```
 ->isDark()
 ```
-![Screenshot](docs/img/4Datepicker.PNG)
+![Screenshot](/docs/img/4Datepicker.PNG)
 
 ## Color
 
 ```
 ->color("red") //gray, red, orange, yellow, green, teal, blue, indigo, purple, pink.
 ```
-![Screenshot](docs/img/5Datepicker.PNG)
+![Screenshot](/docs/img/5Datepicker.PNG)
 
 ## Inline
 ```
 ->isInline() 
 ```
-![Screenshot](docs/img/6Datepicker.PNG)
+![Screenshot](/docs/img/6Datepicker.PNG)
 
 ## Disabled Dates
 
@@ -53,21 +53,21 @@ SuperDatePicker::make(__("Birthdate"), 'birthdate')
 ->disabledDates("2020-03-25","2020-03-24")
 ->disabledDates(["2020-03-25","2020-03-26"])
 ```
-![Screenshot](docs/img/7Datepicker.PNG)
+![Screenshot](/docs/img/7Datepicker.PNG)
 
 ## Format
 
 ```
 ->format("YYYY/MM/DD")
 ```
-![Screenshot](docs/img/8Datepicker.PNG)
+![Screenshot](/docs/img/8Datepicker.PNG)
 
 ## Locale
 
 ```
 ->locale("en")
 ```
-![Screenshot](docs/img/9Datepicker.PNG)
+![Screenshot](/docs/img/9Datepicker.PNG)
 
 ## Min && Max Date
 
@@ -75,7 +75,7 @@ SuperDatePicker::make(__("Birthdate"), 'birthdate')
 ->minDate("2020-03-01")
 ->maxDate("2020-03-31")
 ```
-![Screenshot](docs/img/10Datepicker.PNG)
+![Screenshot](/docs/img/10Datepicker.PNG)
 
 # Advanced Custom DatePicker
 ## Custom Select Date
@@ -92,9 +92,9 @@ use IziDev\VCalendar\Attributes\DotAttributeVCalendar;
     (new DotAttributeVCalendar("orange"))
 )
 ```
-![Screenshot](docs/img/11Datepicker.PNG)
+![Screenshot](/docs/img/11Datepicker.PNG)
 
-###Highlight
+### Highlight
 Arguments: null, true, gray, red, orange, yellow, green, teal, blue, indigo, purple, pink
 ```
 use IziDev\VCalendar\Attributes\HighlightAttributeVCalendar;
@@ -103,9 +103,9 @@ use IziDev\VCalendar\Attributes\HighlightAttributeVCalendar;
     (new HighlightAttributeVCalendar("orange"))
 )
 ```
-![Screenshot](docs/img/12Datepicker.PNG)
+![Screenshot](/docs/img/12Datepicker.PNG)
 
-###Bar
+### Bar
 Arguments: null, true, gray, red, orange, yellow, green, teal, blue, indigo, purple, pink
 ```
 use IziDev\VCalendar\Attributes\BarAttributeVCalendar;
@@ -114,9 +114,9 @@ use IziDev\VCalendar\Attributes\BarAttributeVCalendar;
     (new BarAttributeVCalendar("orange"))
 )
 ```
-![Screenshot](docs/img/13Datepicker.PNG)
+![Screenshot](/docs/img/13Datepicker.PNG)
 
-##Popover
+## Popover
 Arguments:
 ClickPopoverVCalendar,
 FocusPopoverVCalendar,
@@ -130,9 +130,9 @@ use IziDev\VCalendar\Popover\HoverPopoverVCalendar;
         ->popover(new HoverPopoverVCalendar("Fecha de nacimiento"))
 )
 ```
-![Screenshot](docs/img/14Datepicker.PNG)
+![Screenshot](/docs/img/14Datepicker.PNG)
 
-##Add More Select Date
+## Add More Select Date
 Arguments:
 DotAttributeVCalendar,
 HighlightAttributeVCalendar,
@@ -150,24 +150,24 @@ BarAttributeVCalendar
         ->popover(new HoverPopoverVCalendar("Update Record Contact."))
 )
 ```
-![Screenshot](docs/img/15Datepicker.PNG)
+![Screenshot](/docs/img/15Datepicker.PNG)
 
 # Advanced Custom Disabled
 ##Type
 
-|  Object |  Description | Range
+|  Object |  Description | Range | 
 | ------------ | ------------ |
-|  IziDev\VCalendar\Disabled\DaysDisabledDatesVCalendar | Day number from the start or end of the month.	  |1 to 31, -1 to -31
-|  IziDev\VCalendar\Disabled\WeekdaysDisabledDatesVCalendar | Day of the week.	  |1: Sun to 7: Sat
-|  IziDev\VCalendar\Disabled\WeeksDisabledDatesVCalendar | Week number from the start or end of the month.	  |1 to 6, -1 to -6
-|  IziDev\VCalendar\Disabled\MonthsDisabledDatesVCalendar | Months of the year.	  |1 to 12
-|  IziDev\VCalendar\Disabled\YearsDisabledDatesVCalendar | Year numbers.	  |4-digit integer
+|  IziDev\VCalendar\Disabled\DaysDisabledDatesVCalendar | Day number from the start or end of the month.	  |1 to 31, -1 to -31 |
+|  IziDev\VCalendar\Disabled\WeekdaysDisabledDatesVCalendar | Day of the week.	  |1: Sun to 7: Sat |
+|  IziDev\VCalendar\Disabled\WeeksDisabledDatesVCalendar | Week number from the start or end of the month.	  |1 to 6, -1 to -6 |
+|  IziDev\VCalendar\Disabled\MonthsDisabledDatesVCalendar | Months of the year.	  |1 to 12 |
+|  IziDev\VCalendar\Disabled\YearsDisabledDatesVCalendar | Year numbers.	  |4-digit integer |
 
 ```
 ->disabled(new DaysDisabledDatesVCalendar(9, 16))
 ```
 
-##Interval
+## Interval
 
 |  Object |  Description 
 | ------------ | ------------ 
@@ -179,4 +179,4 @@ BarAttributeVCalendar
 ```
 ->disabled(new WeekdaysDisabledDatesVCalendar(1, 7),new WeeklyIntervalDatesVCalendar(2))
 ```
-![Screenshot](docs/img/16Datepicker.PNG)
+![Screenshot](/docs/img/16Datepicker.PNG)
