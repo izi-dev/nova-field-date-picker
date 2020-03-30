@@ -88,7 +88,8 @@ Arguments:
 DotAttributeVCalendar,
 HighlightAttributeVCalendar,
 BarAttributeVCalendar
-###Dot
+
+### Dot
 Arguments: null, true, gray, red, orange, yellow, green, teal, blue, indigo, purple, pink
 ```
 use IziDev\VCalendar\Attributes\DotAttributeVCalendar;
